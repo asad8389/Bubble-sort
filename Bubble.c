@@ -2,8 +2,14 @@
 
 int main()
 {
-    int i,temp,j,n,arr[]={23,1,7,13,29,14,53,2};
-    n=sizeof(arr)/sizeof(arr[0]);
+    int i,temp,j,n,arr[100];
+    
+     printf("Enter no of elemts\n");
+    scanf("%d",&n);
+    printf("enter elements\n");
+    for(i=0;i<n;i++)
+        scanf("%d",&arr[i]);
+    
     printf("array before sorting\n");
     for(i=0;i<n;i++)
         printf("%d ",arr[i]);
